@@ -7,7 +7,7 @@ import pandas as pd
 
 def lower_strip_merge_df(left_df: pd.DataFrame,
                          right_df: pd.DataFrame,
-                         merge_type: list,
+                         merge_type: string,
                          on=[], left_on=[], right_on=[]) -> pd.DataFrame:
 
     assert merge_type in ['left', 'right', 'inner', 'outer', 'cross'], \
